@@ -1,0 +1,62 @@
+<p>form works!</p>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Company (disabled)</mat-label>
+        <input disabled matInput value="TCS">
+    </mat-form-field>
+
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>First name</mat-label>
+                    <input matInput required>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Long Last Name That Will Be Truncated</mat-label>
+                    <input matInput required>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        <mat-form-field class="example-full-width">
+            <mat-label>Address</mat-label>
+            <textarea matInput required placeholder="Ex. 100 Main St" required>1600 Amphitheatre Pkwy</textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Address 2</mat-label>
+            <textarea matInput required></textarea>
+        </mat-form-field>
+    </p>
+
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>City</mat-label>
+                    <input matInput required placeholder="Ex. San Francisco">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>State</mat-label>
+                    <input matInput required placeholder="Ex. California">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Postal Code</mat-label>
+                    <input matInput #postalCode maxlength="6" required placeholder="Ex. 941051" value="940431">
+                    <mat-hint align="end">{{postalCode.value.length}} / 6</mat-hint>
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+</form>

@@ -49,16 +49,25 @@ import {MatTreeModule} from '@angular/material/tree';
 import { ResponsiveComponent } from './responsive/responsive.component';
 import { DialogContentExampleComponent } from './dialog-content-example/dialog-content-example.component';
 import { TableComponent } from './table/table.component';
+import { FormComponent } from './form/form.component';
+import { ExpansionComponent } from './expansion/expansion.component';
+import { StepperComponent } from './stepper/stepper.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResponsiveComponent,
     DialogContentExampleComponent,
-    TableComponent
+    TableComponent,
+    FormComponent,
+    ExpansionComponent,
+    StepperComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
      A11yModule,
